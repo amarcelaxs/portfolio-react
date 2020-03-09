@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Routes from './routes';
+
+/*deve-se incluir o component aqui para ser interpretado */
+/*import Header from './Header';
+
+import Article from './Article';
+
+import Footer from './Footer';
+*/
+
+/*as duas maneiras estão corretas
+
+class  App extends React.Component{
+  render (){
+    return (
+      <div>        
+        <Header />
+        <Article />
+        <Footer />
+        <Button color="danger">Danger!</Button>
+      </div>
+    );
+  }
+}*/
+
+function  App () {
+  
+    return (
+      <div>  
+        <Routes />      
+      </div>
+    );  
+};
+
 
 export default App;
